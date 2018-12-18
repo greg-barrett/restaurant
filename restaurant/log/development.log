@@ -1,0 +1,492 @@
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (252.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (128.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateDishes (20181218140718)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181218140718_create_dishes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181218140718"]]
+  ↳ bin/rails:4
+  [1m[35m (145.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (17.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-18 14:08:14.308563"], ["updated_at", "2018-12-18 14:08:14.308563"]]
+  ↳ bin/rails:4
+  [1m[35m (116.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mDish Create (4.0ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vegetable Soup"], ["description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["created_at", "2018-12-18 14:19:46.807838"], ["updated_at", "2018-12-18 14:19:46.807838"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (110.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mDish Create (3.4ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lasagne"], ["description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["created_at", "2018-12-18 14:19:46.934035"], ["updated_at", "2018-12-18 14:19:46.934035"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (140.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mDish Create (3.8ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Salmon Nigiri"], ["description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["created_at", "2018-12-18 14:19:47.087600"], ["updated_at", "2018-12-18 14:19:47.087600"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (89.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mDish Create (13.0ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken Milanese"], ["description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["created_at", "2018-12-18 14:19:47.186908"], ["updated_at", "2018-12-18 14:19:47.186908"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (118.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mDish Create (4.3ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken Wings"], ["description", "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham."], ["created_at", "2018-12-18 14:19:47.349527"], ["updated_at", "2018-12-18 14:19:47.349527"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (90.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mDish Load (62.6ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 15:27:15 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DishesController#index as */*
+  [1m[36mDish Load (0.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 34ms (Views: 22.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 15:28:13 +0100
+Processing by DishesController#index as */*
+  [1m[36mDish Load (1.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dishes/1" for 127.0.0.1 at 2018-12-18 15:29:26 +0100
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for DishesController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dishes/1" for 127.0.0.1 at 2018-12-18 15:30:32 +0100
+Processing by DishesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8
+Completed 200 OK in 115ms (Views: 3.9ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2018-12-18 15:37:59 +0100
+Processing by DishesController#create as */*
+  Parameters: {"name"=>"Chicken Sandwich", "description"=>"A delicious chicken sandwhich with lots of mayo.", "dish"=>{"name"=>"Chicken Sandwich", "description"=>"A delicious chicken sandwhich with lots of mayo."}}
+Unpermitted parameter: :dish
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[36mDish Create (2.8ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken Sandwich"], ["description", "A delicious chicken sandwhich with lots of mayo."], ["created_at", "2018-12-18 14:37:59.852125"], ["updated_at", "2018-12-18 14:37:59.852125"]]
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[35m (102.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+Completed 200 OK in 233ms (Views: 8.8ms | ActiveRecord: 112.8ms)
+
+
+Started GET "/dishes/6" for 127.0.0.1 at 2018-12-18 15:38:16 +0100
+Processing by DishesController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:8
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2018-12-18 15:40:20 +0100
+Processing by DishesController#create as */*
+  Parameters: {"name"=>"", "description"=>"A delicious chicken sandwhich with lots of mayo.", "dish"=>{"name"=>"", "description"=>"A delicious chicken sandwhich with lots of mayo."}}
+Unpermitted parameter: :dish
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+Completed 422 Unprocessable Entity in 6914ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/dishes/6" for 127.0.0.1 at 2018-12-18 15:44:40 +0100
+  
+SyntaxError (C:/Sites/work/restaurant/app/controllers/dishes_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/dishes_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started DELETE "/dishes/6" for 127.0.0.1 at 2018-12-18 15:44:59 +0100
+  
+SyntaxError (C:/Sites/work/restaurant/app/controllers/dishes_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/dishes_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+Started DELETE "/dishes/6" for 127.0.0.1 at 2018-12-18 15:45:13 +0100
+Processing by DishesController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:23
+  [1m[36mDish Destroy (83.3ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/dishes_controller.rb:23
+  [1m[35m (121.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:23
+Completed 200 OK in 360ms (Views: 0.4ms | ActiveRecord: 208.5ms)
+
+
+Started GET "/dishes/" for 127.0.0.1 at 2018-12-18 15:45:32 +0100
+Processing by DishesController#index as */*
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/dishes/5" for 127.0.0.1 at 2018-12-18 15:48:13 +0100
+Processing by DishesController#update as */*
+  Parameters: {"name"=>"Gregs Dish", "description"=>"It will be great", "id"=>"5", "dish"=>{"name"=>"Gregs Dish", "description"=>"It will be great"}}
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:28
+Unpermitted parameters: :id, :dish
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:29
+  [1m[36mDish Update (3.8ms)[0m  [1m[33mUPDATE "dishes" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "dishes"."id" = ?[0m  [["name", "Gregs Dish"], ["description", "It will be great"], ["updated_at", "2018-12-18 14:48:14.561105"], ["id", 5]]
+  ↳ app/controllers/dishes_controller.rb:29
+  [1m[35m (211.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:29
+Completed 200 OK in 563ms (Views: 1.6ms | ActiveRecord: 222.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 15:48:35 +0100
+Processing by DishesController#index as */*
+  [1m[36mDish Load (1.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 16:55:43 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 88ms (Views: 60.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:02:50 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 35ms (Views: 23.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:09:19 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:09:37 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:11:13 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:11:54 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:12:25 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:13:11 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:20:15 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 75ms (Views: 66.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:20:59 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:27:16 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (2.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:28:37 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:29:44 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:36:26 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2018-12-18 17:37:14 +0100
+Processing by DishesController#create as HTML
+  Parameters: {"name"=>"Caesar Salad", "description"=>"An italian style salad with lots of dressing", "dish"=>{"name"=>"Caesar Salad", "description"=>"An italian style salad with lots of dressing"}}
+Unpermitted parameter: :dish
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[36mDish Create (20.6ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Caesar Salad"], ["description", "An italian style salad with lots of dressing"], ["created_at", "2018-12-18 16:37:14.331481"], ["updated_at", "2018-12-18 16:37:14.331481"]]
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[35m (156.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+Completed 200 OK in 204ms (Views: 1.5ms | ActiveRecord: 176.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:39:28 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:40:18 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2018-12-18 17:41:48 +0100
+Processing by DishesController#create as HTML
+  Parameters: {"name"=>"Cheese Burger", "description"=>"A meaty delight relished by all!", "dish"=>{"name"=>"Cheese Burger", "description"=>"A meaty delight relished by all!"}}
+Unpermitted parameter: :dish
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[36mDish Create (4.9ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cheese Burger"], ["description", "A meaty delight relished by all!"], ["created_at", "2018-12-18 16:41:48.417774"], ["updated_at", "2018-12-18 16:41:48.417774"]]
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[35m (193.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+Completed 200 OK in 221ms (Views: 1.7ms | ActiveRecord: 199.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:42:47 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2018-12-18 17:43:17 +0100
+Processing by DishesController#create as HTML
+  Parameters: {"name"=>"Pizza", "description"=>"This is not a healthy restaurant", "dish"=>{"name"=>"Pizza", "description"=>"This is not a healthy restaurant"}}
+Unpermitted parameter: :dish
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[36mDish Create (7.1ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pizza"], ["description", "This is not a healthy restaurant"], ["created_at", "2018-12-18 16:43:18.204769"], ["updated_at", "2018-12-18 16:43:18.204769"]]
+  ↳ app/controllers/dishes_controller.rb:14
+  [1m[35m (151.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:14
+Completed 200 OK in 183ms (Views: 1.3ms | ActiveRecord: 158.3ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:56:26 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 17:57:06 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:09:47 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (2.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:10:19 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:11:38 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:11:53 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:13:14 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:13:23 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:13:55 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/dishes/9" for 127.0.0.1 at 2018-12-18 18:14:02 +0100
+Processing by DishesController#destroy as HTML
+  Parameters: {"id"=>"9", "dish"=>{}}
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:22
+  [1m[35m (1.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:23
+  [1m[36mDish Destroy (22.7ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/dishes_controller.rb:23
+  [1m[35m (142.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:23
+Completed 200 OK in 398ms (Views: 0.3ms | ActiveRecord: 167.1ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:14:55 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/dishes/8" for 127.0.0.1 at 2018-12-18 18:15:03 +0100
+Processing by DishesController#destroy as HTML
+  Parameters: {"id"=>"8", "dish"=>{}}
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:22
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:23
+  [1m[36mDish Destroy (6.1ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/dishes_controller.rb:23
+  [1m[35m (159.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:23
+Completed 200 OK in 186ms (Views: 0.5ms | ActiveRecord: 166.4ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:18:13 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.8ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:27:00 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (1.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2018-12-18 18:32:19 +0100
+Processing by DishesController#index as HTML
+  [1m[36mDish Load (0.9ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/controllers/dishes_controller.rb:4
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
